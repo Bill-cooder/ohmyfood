@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&family=Shrikhand&display=swap");
-
 * {
   box-sizing: border-box;
 }
@@ -15,7 +14,7 @@ header {
   font-family: "Shrikhand", cursive;
   text-align: center;
   margin: 0px;
-  box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   padding: 0.3rem;
   position: relative;
 }
@@ -36,7 +35,6 @@ main .city i {
 }
 
 /* EXPLORER */
-
 main .explorer {
   text-align: center;
   padding: 1rem 2rem 2rem 2rem;
@@ -52,11 +50,7 @@ main .explorer P {
 }
 
 .explorer button {
-  background-image: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 0.9),
-    rgba(255, 121, 218, 0.9)
-  );
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   color: white;
   font-weight: bold;
   font-size: 1rem;
@@ -144,6 +138,7 @@ main .explorer P {
   color: inherit;
   display: block;
 }
+
 .card_img {
   height: 12rem;
   width: 100%;
@@ -152,6 +147,7 @@ main .explorer P {
   box-shadow: none;
   object-fit: cover;
 }
+
 .card_badge {
   background-color: #99e2d0;
   color: #1b6150;
@@ -161,6 +157,7 @@ main .explorer P {
   top: 1rem;
   right: 0.75rem;
 }
+
 .card_footer {
   padding: 1rem;
   position: relative;
@@ -171,3 +168,5 @@ main .explorer P {
 .card__title {
   margin: 0 0 0.25rem;
 }
+
+/*# sourceMappingURL=style.css.map */
