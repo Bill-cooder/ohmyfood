@@ -1,0 +1,22 @@
+footer {
+  background-color: #353535;
+  padding: 0 2rem;
+  color: white;
+  h2 {
+    font-family: "Shrikhand", "cursive";
+    font-weight: 500;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  P {
+    padding: 2px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
