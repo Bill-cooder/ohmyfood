@@ -3,11 +3,19 @@
   margin-bottom: 2rem;
   & ol {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+    padding: 0 1rem;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   & li {
     position: relative;
+    display: flex;
+    align-items: center;
+    @media (min-width: 768px) {
+      width: 33%;
+    }
     &::before {
       content: counter(etaps);
       counter-increment: etaps;
