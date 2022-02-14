@@ -91,6 +91,45 @@ header {
   transition-duration: 0.25s;
 }
 
+.loader-page {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  background-color: #f6f6f6;
+  height: 100vh;
+  z-index: 1;
+  opacity: 0.9;
+  animation: background-anim 200ms;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.loader-page::after {
+  content: "";
+  animation: spin 3s infinite linear;
+  border: 0.5rem solid;
+  border-color: #9356dc #ff79da;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+@keyframes background-anim {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .fonctionnement {
   counter-reset: etaps;
   margin-bottom: 2rem;
@@ -145,6 +184,10 @@ header {
   transform: scale(1);
   cursor: pointer;
   transition-duration: 0.25s;
+  background-color: #f5edff;
+}
+.fonctionnement li:hover i {
+  color: #9356dc;
 }
 
 .restaurants {
@@ -291,7 +334,7 @@ header {
 }
 
 .resto__titre h2 {
-  margin: -2rem 0 0 0;
+  margin: -3rem 0 0 0;
   font-family: "Shrikhand", "cursive";
   position: relative;
   padding: 2rem 1rem;
@@ -373,7 +416,8 @@ header {
   cursor: pointer;
   margin: 1rem 0;
   overflow: hidden;
-  animation: anim 3s;
+  animation-name: anim;
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
   transform: scale(0);
@@ -447,31 +491,39 @@ button:hover {
 }
 
 .delay-1 {
-  animation-delay: 1s;
+  animation-delay: 0.1s;
 }
 
 .delay-2 {
-  animation-delay: 2s;
+  animation-delay: 0.2s;
 }
 
 .delay-3 {
-  animation-delay: 3s;
+  animation-delay: 0.3s;
 }
 
 .delay-4 {
-  animation-delay: 4s;
+  animation-delay: 0.4s;
 }
 
 .delay-5 {
-  animation-delay: 5s;
+  animation-delay: 0.5s;
 }
 
 .delay-6 {
-  animation-delay: 6s;
+  animation-delay: 0.6s;
 }
 
 .delay-7 {
-  animation-delay: 7s;
+  animation-delay: 0.7s;
+}
+
+.delay-8 {
+  animation-delay: 0.8s;
+}
+
+.delay-9 {
+  animation-delay: 0.9s;
 }
 
 /*# sourceMappingURL=style.css.map */

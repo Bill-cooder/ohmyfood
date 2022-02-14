@@ -40,7 +40,7 @@ header {
 }
 .resto__titre {
   h2 {
-    margin: -2rem 0 0 0;
+    margin: -3rem 0 0 0;
     font-family: "Shrikhand", "cursive";
     position: relative;
     padding: 2rem 1rem;
@@ -124,7 +124,8 @@ header {
     cursor: pointer;
     margin: 1rem 0;
     overflow: hidden;
-    animation: anim 3s;
+    animation-name: anim;
+    animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
     animation-fill-mode: both;
     transform: scale(0);
@@ -198,8 +199,8 @@ button:hover {
   cursor: pointer;
   transition-duration: 0.25s;
 }
-@for $i from 0 to 8 {
+@for $i from 0 to 10 {
   .delay-#{$i} {
-    animation-delay: #{$i/1}s;
+    animation-delay: #{$i/10}s;
   }
 }
