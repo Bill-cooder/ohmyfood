@@ -54,6 +54,11 @@ header {
   font-weight: 700;
   margin: 0 -7rem;
 }
+@media (max-width: 1024px) {
+  .city {
+    margin: 0 -1rem;
+  }
+}
 .city i {
   font-size: 27px;
 }
